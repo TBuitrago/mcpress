@@ -1,0 +1,7 @@
+_privado/
+.DS_Store
+node_modules/
+vendor/
+*.zip
+brand/source/compose/
+brand/source/tmp/

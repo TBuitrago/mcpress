@@ -1,0 +1,30 @@
+:root{
+  /* MCPress · tokens de marca (sub-marca de TBA Digitals) */
+  --mcp-tinta: #0D1A2E;
+  --mcp-papel: #F4F1EA;
+  --mcp-senal: #415BF7;
+  --mcp-senal-clara: #7B8DFF;
+  --mcp-senal-presionada: #2E44D6;
+  --mcp-texto-suave: #47526B;
+  --mcp-texto-suave-oscuro: #9BA6BC;
+  --mcp-linea: #E3E0D6;
+  --mcp-aprobado: #1F8A5B;
+  --mcp-pendiente: #D98A00;
+  --mcp-rechazado: #D93A3A;
+  --mcp-blanco: #FFFFFF;
+  --mcp-font-display: 'Poppins', system-ui, -apple-system, sans-serif;  /* 800 titulares */
+  --mcp-font-body: 'Poppins', system-ui, -apple-system, sans-serif;     /* 400/500 texto */
+  --mcp-font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace; /* 500 etiquetas, código */
+  --mcp-radius-key: 24%;          /* radio de la tecla = 24 % del lado */
+  --mcp-key-depth: 11.6%;         /* profundidad del labio = 100/860 de la altura */
+  --mcp-ease-press: cubic-bezier(.55,0,.85,.25);
+  --mcp-ease-release: cubic-bezier(.3,1.65,.5,1);
+  --mcp-ease-out: cubic-bezier(.16,1,.3,1);
+}
+/* Botón "tecla" de MCPress: el mismo gesto del logo aplicado a la UI */
+.mcp-key-btn{font:600 1rem/1 var(--mcp-font-body);color:#fff;background:var(--mcp-senal);border:0;border-radius:14px;
+  padding:.95em 1.5em;box-shadow:0 6px 0 var(--mcp-tinta);transform:translateY(0);transition:transform .12s var(--mcp-ease-press),box-shadow .12s var(--mcp-ease-press);cursor:pointer}
+.mcp-key-btn:hover{background:var(--mcp-senal-presionada)}
+.mcp-key-btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--mcp-tinta)}
+.mcp-key-btn:focus-visible{outline:3px solid var(--mcp-senal-clara);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.mcp-key-btn{transition:none}}

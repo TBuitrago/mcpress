@@ -1,0 +1,9 @@
+_privado
+brand
+docs
+tests
+.github
+.wordpress-org
+.gitignore
+.distignore
+mover-privado.sh
