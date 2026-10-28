@@ -1,0 +1,5 @@
+# Not shipped in the plugin zip (see .github/workflows/release.yml).
+tests
+bin
+.distignore
+.DS_Store

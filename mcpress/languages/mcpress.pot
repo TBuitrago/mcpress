@@ -1,0 +1,1230 @@
+# Copyright (C) TBA Digitals
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MCPress\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: mcpress\n"
+
+#. translators: %d: number of pending requests.
+#: includes/admin/class-admin-bar.php:37
+#, php-format
+msgid "%d AI request"
+msgid_plural "%d AI requests"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-admin-bar.php:42
+msgid "Your AI is waiting for your approval"
+msgstr ""
+
+#: includes/admin/class-admin.php:65
+msgid "Connect your AI"
+msgstr ""
+
+#: includes/admin/class-admin.php:65 includes/admin/class-admin.php:108 includes/admin/class-admin.php:132
+msgid "Connect"
+msgstr ""
+
+#: includes/admin/class-admin.php:66 includes/admin/class-admin.php:66 includes/admin/class-admin.php:133 includes/admin/views/settings.php:71
+msgid "Approvals"
+msgstr ""
+
+#: includes/admin/class-admin.php:67 includes/admin/class-admin.php:67 includes/admin/class-admin.php:134 includes/admin/views/activity.php:40
+msgid "Activity"
+msgstr ""
+
+#: includes/admin/class-admin.php:68 includes/admin/class-admin.php:68 includes/admin/class-admin.php:109 includes/admin/class-admin.php:135
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin.php:69 includes/admin/class-admin.php:69 includes/admin/class-admin.php:136 includes/admin/views/diagnostics.php:28
+msgid "Diagnostics"
+msgstr ""
+
+#: includes/admin/class-admin.php:83
+msgid "Copied"
+msgstr ""
+
+#: includes/admin/class-admin.php:84 includes/admin/views/connect.php:166 includes/admin/views/connect.php:172 includes/admin/views/connect.php:220
+msgid "Copy"
+msgstr ""
+
+#: includes/admin/class-admin.php:85
+msgid "Disconnect this AI? It will stop working immediately."
+msgstr ""
+
+#: includes/admin/class-admin.php:86
+msgid "Disconnect every AI from this site?"
+msgstr ""
+
+#: includes/admin/class-admin.php:87
+msgid "Delete the whole activity log?"
+msgstr ""
+
+#: includes/admin/class-admin.php:88
+msgid "Full access lets the AI do anything without asking, including running PHP. Continue?"
+msgstr ""
+
+#: includes/admin/class-admin.php:118 includes/admin/class-admin.php:185
+msgid "You are not allowed to manage MCPress."
+msgstr ""
+
+#: includes/admin/class-admin.php:143
+msgid "Your AI runs WordPress. You set the rules."
+msgstr ""
+
+#: includes/admin/class-admin.php:215 includes/admin/views/activity.php:65
+msgid "Pending"
+msgstr ""
+
+#: includes/admin/class-admin.php:216 includes/admin/views/activity.php:32
+msgid "Approved"
+msgstr ""
+
+#: includes/admin/class-admin.php:217
+msgid "Approved and run"
+msgstr ""
+
+#: includes/admin/class-admin.php:218
+msgid "Approved, failed"
+msgstr ""
+
+#: includes/admin/class-admin.php:219 includes/admin/views/activity.php:34
+msgid "Rejected"
+msgstr ""
+
+#: includes/admin/class-admin.php:220
+msgid "Expired"
+msgstr ""
+
+#: includes/admin/class-admin.php:221 includes/admin/views/activity.php:63
+msgid "Done"
+msgstr ""
+
+#: includes/admin/class-admin.php:222 includes/admin/views/activity.php:64
+msgid "Error"
+msgstr ""
+
+#: includes/admin/class-admin.php:223 includes/admin/views/activity.php:31
+msgid "Ran directly"
+msgstr ""
+
+#: includes/admin/class-admin.php:224 includes/admin/views/activity.php:35 includes/admin/views/settings.php:58
+msgid "Refused"
+msgstr ""
+
+#: includes/admin/class-admin.php:225 includes/admin/views/activity.php:36
+msgid "Blocked by a guard"
+msgstr ""
+
+#: includes/admin/class-admin.php:249 includes/class-context.php:33
+msgid "Application password"
+msgstr ""
+
+#: includes/admin/class-admin.php:253
+msgid "disconnected"
+msgstr ""
+
+#: includes/admin/class-admin.php:286
+msgid "Key created. Copy it now: it will not be shown again."
+msgstr ""
+
+#: includes/admin/class-admin.php:309
+msgid "Connection updated."
+msgstr ""
+
+#: includes/admin/class-admin.php:318
+msgid "Disconnected. That AI can no longer reach this site."
+msgstr ""
+
+#: includes/admin/class-admin.php:326
+msgid "Every AI was disconnected."
+msgstr ""
+
+#: includes/admin/class-admin.php:338
+msgid "Approved and run. This connection can now use that tool without asking."
+msgstr ""
+
+#: includes/admin/class-admin.php:338
+msgid "Approved and run. Your AI will get the result when it checks."
+msgstr ""
+
+#: includes/admin/class-admin.php:340
+msgid "Approved, but the action failed. The error was sent to your AI."
+msgstr ""
+
+#: includes/admin/class-admin.php:353
+msgid "Rejected. Your AI will be told when it checks."
+msgstr ""
+
+#: includes/admin/class-admin.php:394
+msgid "Settings saved."
+msgstr ""
+
+#. translators: %s: error message.
+#: includes/admin/class-admin.php:404
+#, php-format
+msgid "Could not read the releases on GitHub: %s"
+msgstr ""
+
+#. translators: %s: version number.
+#: includes/admin/class-admin.php:407
+#, php-format
+msgid "Version %s is available. Update it from the Plugins screen, or wait for the automatic update."
+msgstr ""
+
+#: includes/admin/class-admin.php:407
+msgid "Go to Plugins"
+msgstr ""
+
+#: includes/admin/class-admin.php:409
+msgid "You have the latest version."
+msgstr ""
+
+#: includes/admin/class-admin.php:417
+msgid "Activity log cleared."
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:30
+msgid "Connect an AI"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:60
+msgid "This connection cannot continue"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:68
+msgid "Your account cannot connect an AI"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:69
+msgid "Only administrators can connect an AI to this site. Log in with an administrator account and try again."
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:71
+msgid "Log in with another account"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:132
+msgid "An AI client"
+msgstr ""
+
+#. translators: 1: AI client name, 2: site name.
+#: includes/admin/class-authorize-page.php:140
+#, php-format
+msgid "Connect %1$s to %2$s"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:143
+msgid "New AI connection"
+msgstr ""
+
+#. translators: 1: AI client name, 2: site name.
+#: includes/admin/class-authorize-page.php:147
+#, php-format
+msgid "%1$s wants to work on %2$s"
+msgstr ""
+
+#. translators: 1: user login, 2: return host.
+#: includes/admin/class-authorize-page.php:153
+#, php-format
+msgid "It will act as %1$s, with that account's permissions. After you decide, you go back to %2$s."
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:160
+msgid "How much control do you give it?"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:169
+msgid "You can change the mode or disconnect at any time in wp-admin → MCPress. Everything the AI does is logged."
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:171
+msgid "Connect AI"
+msgstr ""
+
+#: includes/admin/class-authorize-page.php:172
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:28
+msgid "HTTPS"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:30
+msgid "The MCP URL uses HTTPS."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:30
+msgid "The site is not on HTTPS. Keys would travel in clear text, and Claude/ChatGPT refuse http:// connectors."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:35
+msgid "Permalinks"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:37
+msgid "Pretty permalinks are on."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:37
+msgid "Plain permalinks: API keys work, but OAuth discovery (Claude, ChatGPT) needs pretty permalinks."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:55 includes/admin/class-diagnostics.php:61 includes/admin/class-diagnostics.php:65
+msgid "MCP endpoint"
+msgstr ""
+
+#. translators: %s: error.
+#: includes/admin/class-diagnostics.php:55
+#, php-format
+msgid "The site could not call itself to test the endpoint (%s). This is common on local or firewalled servers; test from your AI client instead."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:61
+msgid "The endpoint answers and the Authorization header reaches WordPress."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:63
+msgid "Authorization header"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:63
+msgid "Your server removes the Authorization header. Add this line to .htaccess, above the WordPress block: SetEnvIf Authorization \"(.*)\" HTTP_AUTHORIZATION=$1 — or configure your client to send the key in the X-MCPress-Key header."
+msgstr ""
+
+#. translators: %d: HTTP status.
+#: includes/admin/class-diagnostics.php:65
+#, php-format
+msgid "Unexpected HTTP %d from the MCP endpoint. A security plugin or firewall may be blocking the REST API."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:79 includes/admin/class-diagnostics.php:84 includes/admin/class-diagnostics.php:86
+msgid "OAuth discovery"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:81
+msgid "Metadata is published, including /.well-known/ at the site root."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:81
+msgid "Metadata is published through the REST API. /.well-known/ at the root is not reachable (fine for current clients; some older clients may need it)."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:84
+msgid "Could not test (the site cannot call itself)."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:86
+msgid "OAuth metadata is not reachable. Claude and ChatGPT connectors will fail; API keys still work."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:89 includes/admin/views/connect.php:300
+msgid "OAuth"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:89
+msgid "OAuth is off. Only API keys can connect."
+msgstr ""
+
+#. translators: %s: version.
+#: includes/admin/class-diagnostics.php:93
+#, php-format
+msgid "PHP %s."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:93
+msgid "PHP 8.1 or newer is recommended."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:101
+msgid "Database tables"
+msgstr ""
+
+#. translators: %s: table names.
+#: includes/admin/class-diagnostics.php:101
+#, php-format
+msgid "Missing: %s. Deactivate and activate MCPress."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:101
+msgid "All MCPress tables exist."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:106
+msgid "File changes"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:108
+msgid "DISALLOW_FILE_MODS is on: your AI cannot install, update or delete plugins/themes, nor edit files."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:108
+msgid "DISALLOW_FILE_EDIT is on: your AI cannot edit plugin/theme files (installing and updating still work)."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:108
+msgid "Your AI can manage plugins, themes and files (subject to its mode)."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:115
+msgid "Filesystem access"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:115
+msgid "WordPress can write files directly."
+msgstr ""
+
+#. translators: %s: method.
+#: includes/admin/class-diagnostics.php:115
+#, php-format
+msgid "WordPress needs \"%s\" credentials to write files. Installing plugins and editing files from your AI will fail unless FS_METHOD and credentials are defined in wp-config.php."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:119
+msgid "Updates from GitHub"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:121
+msgid "Not checked yet."
+msgstr ""
+
+#. translators: %s: version.
+#: includes/admin/class-diagnostics.php:121
+#, php-format
+msgid "GitHub reachable. Latest release: %s."
+msgstr ""
+
+#. translators: %s: error.
+#: includes/admin/class-diagnostics.php:121
+#, php-format
+msgid "Could not read GitHub releases: %s"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:126
+msgid "Automatic updates"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:128
+msgid "MCPress updates itself in the background."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:128
+msgid "Automatic updates are disabled on this server (AUTOMATIC_UPDATER_DISABLED or no cron). Update from the Plugins screen."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:128
+msgid "Automatic updates for MCPress are off in Settings."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:132 includes/mcp/class-tool-registry.php:83
+msgid "Abilities API"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:134
+msgid "Available: your AI can run abilities registered by other plugins."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:134
+msgid "Not available (WordPress 6.9+). The rest of MCPress works normally."
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:138 includes/mcp/class-tool-registry.php:80
+msgid "PHP execution"
+msgstr ""
+
+#: includes/admin/class-diagnostics.php:138
+msgid "MCPRESS_DISABLE_PHP_EXECUTION is set: run_php is unavailable."
+msgstr ""
+
+#: includes/admin/views/activity.php:33
+msgid "Sent for approval"
+msgstr ""
+
+#. translators: %d: number of days.
+#: includes/admin/views/activity.php:44
+#, php-format
+msgid "Every call your AIs made, whatever the outcome. Kept for %d days."
+msgstr ""
+
+#: includes/admin/views/activity.php:50
+msgid "All tools"
+msgstr ""
+
+#: includes/admin/views/activity.php:56
+msgid "Any decision"
+msgstr ""
+
+#: includes/admin/views/activity.php:62
+msgid "Any result"
+msgstr ""
+
+#: includes/admin/views/activity.php:68
+msgid "All connections"
+msgstr ""
+
+#: includes/admin/views/activity.php:73
+msgid "Search arguments and results"
+msgstr ""
+
+#: includes/admin/views/activity.php:74
+msgid "Filter"
+msgstr ""
+
+#: includes/admin/views/activity.php:78
+msgid "No activity yet."
+msgstr ""
+
+#: includes/admin/views/activity.php:83 includes/admin/views/approvals.php:120
+msgid "When"
+msgstr ""
+
+#: includes/admin/views/activity.php:84 includes/admin/views/approvals.php:36
+msgid "Tool"
+msgstr ""
+
+#: includes/admin/views/activity.php:85 includes/admin/views/approvals.php:35 includes/admin/views/approvals.php:117
+msgid "Risk"
+msgstr ""
+
+#: includes/admin/views/activity.php:86
+msgid "Decision"
+msgstr ""
+
+#: includes/admin/views/activity.php:87 includes/admin/views/activity.php:100
+msgid "Result"
+msgstr ""
+
+#: includes/admin/views/activity.php:88 includes/admin/views/approvals.php:37 includes/admin/views/approvals.php:119 includes/admin/views/connect.php:282
+msgid "Connection"
+msgstr ""
+
+#: includes/admin/views/activity.php:98
+msgid "Arguments"
+msgstr ""
+
+#: includes/admin/views/activity.php:134
+msgid "Clear log"
+msgstr ""
+
+#: includes/admin/views/approvals.php:31 includes/admin/views/approvals.php:116
+msgid "Request"
+msgstr ""
+
+#: includes/admin/views/approvals.php:34 includes/admin/views/approvals.php:118
+msgid "Status"
+msgstr ""
+
+#: includes/admin/views/approvals.php:38
+msgid "Requested"
+msgstr ""
+
+#: includes/admin/views/approvals.php:40 includes/admin/views/connect.php:248
+msgid "Expires"
+msgstr ""
+
+#: includes/admin/views/approvals.php:42
+msgid "Decided"
+msgstr ""
+
+#: includes/admin/views/approvals.php:47
+msgid "What will happen"
+msgstr ""
+
+#: includes/admin/views/approvals.php:51
+msgid "Exact request"
+msgstr ""
+
+#: includes/admin/views/approvals.php:58
+msgid "Approve and run"
+msgstr ""
+
+#. translators: %s: tool name.
+#: includes/admin/views/approvals.php:63
+#, php-format
+msgid "Approve and always allow %s for this AI"
+msgstr ""
+
+#: includes/admin/views/approvals.php:70
+msgid "Note for your AI"
+msgstr ""
+
+#: includes/admin/views/approvals.php:71
+msgid "Optional: tell your AI why, or what to do instead"
+msgstr ""
+
+#: includes/admin/views/approvals.php:72
+msgid "Reject"
+msgstr ""
+
+#: includes/admin/views/approvals.php:76
+msgid "Result sent to your AI"
+msgstr ""
+
+#: includes/admin/views/approvals.php:83
+msgid "Your note"
+msgstr ""
+
+#: includes/admin/views/approvals.php:86
+msgid "All requests"
+msgstr ""
+
+#: includes/admin/views/approvals.php:91
+msgid "Waiting for you"
+msgstr ""
+
+#: includes/admin/views/approvals.php:93
+msgid "Nothing to approve. When an AI in \"Prior approval\" or \"Automatic\" mode asks for something, it shows up here."
+msgstr ""
+
+#: includes/admin/views/approvals.php:102 includes/admin/views/connect.php:303
+msgid "expired"
+msgstr ""
+
+#: includes/admin/views/approvals.php:112
+msgid "Recently decided"
+msgstr ""
+
+#: includes/admin/views/connect.php:39
+msgid "In claude.ai or Claude Desktop open Settings → Connectors → Add custom connector."
+msgstr ""
+
+#: includes/admin/views/connect.php:40
+msgid "Paste the MCP URL and click Add, then Connect."
+msgstr ""
+
+#: includes/admin/views/connect.php:41 includes/admin/views/connect.php:51
+msgid "You will land on this site: log in, pick the permission mode and click \"Connect AI\"."
+msgstr ""
+
+#: includes/admin/views/connect.php:49
+msgid "In ChatGPT open Settings → Apps & Connectors → Advanced settings and turn on Developer mode."
+msgstr ""
+
+#: includes/admin/views/connect.php:50
+msgid "Create a connector, paste the MCP URL and choose OAuth as authentication."
+msgstr ""
+
+#: includes/admin/views/connect.php:59
+msgid "Create an API key below, then run this in your terminal:"
+msgstr ""
+
+#: includes/admin/views/connect.php:67
+msgid "Create an API key below and add this to ~/.cursor/mcp.json (or .cursor/mcp.json in a project):"
+msgstr ""
+
+#: includes/admin/views/connect.php:84
+msgid "Create an API key below and add this to .vscode/mcp.json:"
+msgstr ""
+
+#: includes/admin/views/connect.php:102
+msgid "Create an API key below and add this to ~/.codeium/windsurf/mcp_config.json:"
+msgstr ""
+
+#: includes/admin/views/connect.php:119
+msgid "Create an API key below and add this to ~/.gemini/settings.json:"
+msgstr ""
+
+#: includes/admin/views/connect.php:133
+msgid "Other"
+msgstr ""
+
+#: includes/admin/views/connect.php:136
+msgid "Any client that speaks Streamable HTTP: use the MCP URL and the header \"Authorization: Bearer <key>\". If your host strips that header, send \"X-MCPress-Key: <key>\" instead."
+msgstr ""
+
+#: includes/admin/views/connect.php:137
+msgid "Clients that only run local (stdio) servers can use the mcp-remote bridge, for example in claude_desktop_config.json:"
+msgstr ""
+
+#: includes/admin/views/connect.php:154
+msgid "This site is not served over HTTPS. Your key would travel in clear text: enable HTTPS before connecting an AI on a public network. Claude and ChatGPT only accept https:// URLs."
+msgstr ""
+
+#: includes/admin/views/connect.php:157
+msgid "Your permalinks are set to \"Plain\". API keys work, but OAuth connections (Claude, ChatGPT) need pretty permalinks: Settings → Permalinks."
+msgstr ""
+
+#: includes/admin/views/connect.php:162
+msgid "Your new key"
+msgstr ""
+
+#: includes/admin/views/connect.php:163
+msgid "Copy it now: it will not be shown again"
+msgstr ""
+
+#: includes/admin/views/connect.php:169
+msgid "URL with the key inside (for clients that only accept a URL). Anyone with this URL controls the connection:"
+msgstr ""
+
+#: includes/admin/views/connect.php:175
+msgid "The instructions below already include it."
+msgstr ""
+
+#: includes/admin/views/connect.php:180
+msgid "MCP URL of this site"
+msgstr ""
+
+#: includes/admin/views/connect.php:183
+msgid "Copy URL"
+msgstr ""
+
+#. translators: %s: mode label.
+#: includes/admin/views/connect.php:188
+#, php-format
+msgid "New connections start in %s. You choose the mode for each AI, and you can change it any time."
+msgstr ""
+
+#: includes/admin/views/connect.php:223
+msgid "No key needed: the connection is authorised with your WordPress login (OAuth)."
+msgstr ""
+
+#: includes/admin/views/connect.php:232
+msgid "Create an API key"
+msgstr ""
+
+#: includes/admin/views/connect.php:233
+msgid "For Claude Code, Cursor, VS Code and other clients that accept a header. Each key is a separate connection with its own mode."
+msgstr ""
+
+#: includes/admin/views/connect.php:236
+msgid "Name"
+msgstr ""
+
+#: includes/admin/views/connect.php:237
+msgid "e.g. Claude Code on my laptop"
+msgstr ""
+
+#: includes/admin/views/connect.php:240 includes/admin/views/connect.php:283 includes/admin/views/connect.php:322
+msgid "Mode"
+msgstr ""
+
+#: includes/admin/views/connect.php:250 includes/admin/views/settings.php:125
+msgid "Never"
+msgstr ""
+
+#: includes/admin/views/connect.php:251
+msgid "In 1 day"
+msgstr ""
+
+#: includes/admin/views/connect.php:252
+msgid "In 7 days"
+msgstr ""
+
+#: includes/admin/views/connect.php:253
+msgid "In 30 days"
+msgstr ""
+
+#: includes/admin/views/connect.php:254
+msgid "In 90 days"
+msgstr ""
+
+#: includes/admin/views/connect.php:255
+msgid "In 1 year"
+msgstr ""
+
+#: includes/admin/views/connect.php:261
+msgid "Also allow this key inside the URL"
+msgstr ""
+
+#: includes/admin/views/connect.php:264
+msgid "Create key"
+msgstr ""
+
+#: includes/admin/views/connect.php:274
+msgid "Connected AIs"
+msgstr ""
+
+#: includes/admin/views/connect.php:276
+msgid "No AI is connected yet. Follow the steps above."
+msgstr ""
+
+#: includes/admin/views/connect.php:284
+msgid "Acts as"
+msgstr ""
+
+#: includes/admin/views/connect.php:285
+msgid "Last used"
+msgstr ""
+
+#: includes/admin/views/connect.php:286
+msgid "Actions"
+msgstr ""
+
+#: includes/admin/views/connect.php:300 includes/auth/class-connections.php:28
+msgid "API key"
+msgstr ""
+
+#. translators: %s: date.
+#: includes/admin/views/connect.php:303
+#, php-format
+msgid "expires %s"
+msgstr ""
+
+#: includes/admin/views/connect.php:308
+msgid "Always allowed:"
+msgstr ""
+
+#: includes/admin/views/connect.php:313
+msgid "Stop allowing without asking"
+msgstr ""
+
+#: includes/admin/views/connect.php:328
+msgid "Save"
+msgstr ""
+
+#: includes/admin/views/connect.php:341
+msgid "Disconnect"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:21
+msgid "OK"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:22
+msgid "Check"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:23
+msgid "Problem"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:24
+msgid "Info"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:29
+msgid "If your AI cannot connect, start here."
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:45
+msgid "Endpoints"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:48
+msgid "OAuth metadata"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:49
+msgid "Protected resource"
+msgstr ""
+
+#: includes/admin/views/diagnostics.php:50
+msgid "Version"
+msgstr ""
+
+#: includes/admin/views/settings.php:29
+msgid "Default mode for new connections"
+msgstr ""
+
+#: includes/admin/views/settings.php:30
+msgid "Each AI keeps its own mode; this is what new connections start with. You can change any connection on the Connect screen."
+msgstr ""
+
+#: includes/admin/views/settings.php:32
+msgid "Default mode"
+msgstr ""
+
+#: includes/admin/views/settings.php:42
+msgid "What each mode does with each risk level"
+msgstr ""
+
+#: includes/admin/views/settings.php:56
+msgid "Runs"
+msgstr ""
+
+#: includes/admin/views/settings.php:57
+msgid "Asks you"
+msgstr ""
+
+#: includes/admin/views/settings.php:74
+msgid "A request expires after (hours)"
+msgstr ""
+
+#: includes/admin/views/settings.php:79
+msgid "Email me when an AI is waiting for approval"
+msgstr ""
+
+#: includes/admin/views/settings.php:82
+msgid "Send to"
+msgstr ""
+
+#: includes/admin/views/settings.php:89
+msgid "Tools"
+msgstr ""
+
+#: includes/admin/views/settings.php:90
+msgid "Switch whole areas off, or set a rule for a single tool. \"Follow the mode\" uses the table above. Rules apply to every connection, even in Full access."
+msgstr ""
+
+#: includes/admin/views/settings.php:102
+msgid "Enabled"
+msgstr ""
+
+#. translators: %d: number of tools.
+#: includes/admin/views/settings.php:108
+#, php-format
+msgid "%d tool"
+msgid_plural "%d tools"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/views/settings.php:118
+msgid "or higher, depending on the call"
+msgstr ""
+
+#: includes/admin/views/settings.php:120
+msgid "Rule"
+msgstr ""
+
+#: includes/admin/views/settings.php:122
+msgid "Follow the mode"
+msgstr ""
+
+#: includes/admin/views/settings.php:123
+msgid "Always run"
+msgstr ""
+
+#: includes/admin/views/settings.php:124
+msgid "Always ask"
+msgstr ""
+
+#: includes/admin/views/settings.php:137
+msgid "Security"
+msgstr ""
+
+#: includes/admin/views/settings.php:141
+msgid "Protect sensitive data"
+msgstr ""
+
+#: includes/admin/views/settings.php:141
+msgid "masks password hashes, API keys, tokens and similar secrets in everything the AI reads, and blocks reading wp-config.php and .env."
+msgstr ""
+
+#: includes/admin/views/settings.php:145
+msgid "Allow OAuth connections"
+msgstr ""
+
+#: includes/admin/views/settings.php:145
+msgid "needed by Claude (claude.ai, Desktop) and ChatGPT connectors."
+msgstr ""
+
+#: includes/admin/views/settings.php:149
+msgid "OAuth access token lifetime (minutes)"
+msgstr ""
+
+#: includes/admin/views/settings.php:153
+msgid "Stay connected without using it for (days)"
+msgstr ""
+
+#: includes/admin/views/settings.php:159
+msgid "Allow keys inside the URL"
+msgstr ""
+
+#: includes/admin/views/settings.php:159
+msgid "for clients that only accept a URL and no OAuth. The key ends up in server logs: use it only when there is no other way."
+msgstr ""
+
+#: includes/admin/views/settings.php:163
+msgid "Accept WordPress application passwords"
+msgstr ""
+
+#: includes/admin/views/settings.php:163
+msgid "they connect with the default mode and are not listed as connections. MCPress keys are recommended."
+msgstr ""
+
+#: includes/admin/views/settings.php:169
+msgid "Activity log"
+msgstr ""
+
+#: includes/admin/views/settings.php:172
+msgid "Keep entries for (days)"
+msgstr ""
+
+#: includes/admin/views/settings.php:177
+msgid "Record the arguments of each call (secrets are always masked)"
+msgstr ""
+
+#: includes/admin/views/settings.php:183
+msgid "Updates"
+msgstr ""
+
+#. translators: 1: version, 2: GitHub repository.
+#: includes/admin/views/settings.php:187
+#, php-format
+msgid "Installed: %1$s. Updates come from GitHub (%2$s)."
+msgstr ""
+
+#. translators: %s: time ago.
+#: includes/admin/views/settings.php:191
+#, php-format
+msgid "Last check: %s."
+msgstr ""
+
+#. translators: %s: version.
+#: includes/admin/views/settings.php:195
+#, php-format
+msgid "Latest release: %s."
+msgstr ""
+
+#: includes/admin/views/settings.php:205
+msgid "Install new versions automatically"
+msgstr ""
+
+#: includes/admin/views/settings.php:208
+msgid "Channel"
+msgstr ""
+
+#: includes/admin/views/settings.php:210
+msgid "Stable releases"
+msgstr ""
+
+#: includes/admin/views/settings.php:211
+msgid "Include pre-releases (beta)"
+msgstr ""
+
+#: includes/admin/views/settings.php:217
+msgid "Save settings"
+msgstr ""
+
+#: includes/admin/views/settings.php:221
+msgid "Check for updates"
+msgstr ""
+
+#: includes/admin/views/settings.php:223
+msgid "Check GitHub now"
+msgstr ""
+
+#: includes/admin/views/settings.php:228
+msgid "Danger zone"
+msgstr ""
+
+#: includes/admin/views/settings.php:229
+msgid "Disconnect every AI at once. Keys and OAuth sessions stop working immediately."
+msgstr ""
+
+#: includes/admin/views/settings.php:231
+msgid "Disconnect all AIs"
+msgstr ""
+
+#: includes/auth/class-connections.php:53 includes/auth/class-oauth.php:427
+msgid "OAuth client"
+msgstr ""
+
+#: includes/auth/class-oauth.php:247
+msgid "OAuth connections are disabled on this site. Create an API key in MCPress → Connect instead."
+msgstr ""
+
+#: includes/auth/class-oauth.php:256
+msgid "This AI client is not registered with this site. Try connecting again from your AI app."
+msgstr ""
+
+#: includes/auth/class-oauth.php:259
+msgid "The return address of this request does not match the one the AI client registered."
+msgstr ""
+
+#: includes/auth/class-oauth.php:470
+msgid "The client ID URL is not valid."
+msgstr ""
+
+#: includes/auth/class-oauth.php:485
+msgid "Could not fetch the AI client's metadata document."
+msgstr ""
+
+#: includes/auth/class-oauth.php:489
+msgid "The AI client's metadata document is invalid."
+msgstr ""
+
+#: includes/class-updater.php:102
+msgid "HTTP 404: no published release yet, or the token cannot see the repository."
+msgstr ""
+
+#: includes/class-updater.php:103
+msgid "HTTP 404: the repository is private or has no published release yet. Publish a release, or define MCPRESS_GITHUB_TOKEN for a private repository."
+msgstr ""
+
+#: includes/class-updater.php:182
+msgid "Connect your AI to WordPress over MCP. Your AI runs WordPress; you set the rules: prior approval or fully automatic."
+msgstr ""
+
+#: includes/class-updater.php:211
+msgid "Could not download the MCPress update from GitHub."
+msgstr ""
+
+#: includes/class-updater.php:216
+msgid "The MCPress update did not match its published SHA-256 checksum and was not installed."
+msgstr ""
+
+#: includes/class-updater.php:243
+msgid "The downloaded package does not contain mcpress.php."
+msgstr ""
+
+#: includes/class-updater.php:250
+msgid "The MCPress package must contain a single \"mcpress\" folder."
+msgstr ""
+
+#: includes/class-updater.php:257
+msgid "Could not prepare the MCPress update folder."
+msgstr ""
+
+#. translators: %s: human time difference, e.g. "5 minutes".
+#: includes/class-util.php:106
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:67
+msgid "Site and settings"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:68
+msgid "Posts, pages and custom post types"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:69
+msgid "Categories, tags and taxonomies"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:70
+msgid "Media library"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:71
+msgid "Comments"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:72
+msgid "Users and roles"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:73
+msgid "Options (wp_options)"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:74
+msgid "Plugins"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:75
+msgid "Themes and global styles"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:76
+msgid "WordPress updates"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:77
+msgid "Menus"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:78
+msgid "Files"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:79
+msgid "Database"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:81
+msgid "Cache, rewrites and cron"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:82
+msgid "REST API bridge (any plugin)"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:84
+msgid "Elementor"
+msgstr ""
+
+#: includes/mcp/class-tool-registry.php:85
+msgid "MCPress (status and approvals)"
+msgstr ""
+
+#: includes/permissions/class-approvals.php:151
+msgid "That request does not exist."
+msgstr ""
+
+#: includes/permissions/class-approvals.php:154 includes/permissions/class-approvals.php:180 includes/permissions/class-approvals.php:208
+msgid "That request was already decided."
+msgstr ""
+
+#: includes/permissions/class-approvals.php:158
+msgid "That request expired. Ask your AI to send it again."
+msgstr ""
+
+#: includes/permissions/class-approvals.php:167
+msgid "The tool of this request is no longer available."
+msgstr ""
+
+#: includes/permissions/class-approvals.php:307
+msgid "The connection that sent this request was revoked or expired."
+msgstr ""
+
+#: includes/permissions/class-approvals.php:312
+msgid "The user of this request no longer exists."
+msgstr ""
+
+#. translators: 1: site name, 2: action summary.
+#: includes/permissions/class-approvals.php:355
+#, php-format
+msgid "[%1$s] Your AI is waiting for approval: %2$s"
+msgstr ""
+
+#. translators: 1: connection name, 2: summary, 3: risk, 4: URL, 5: expiry.
+#: includes/permissions/class-approvals.php:358
+#, php-format
+msgid "The connection \"%1$s\" asked to run:\n\n%2$s\nRisk: %3$s\n\nReview it here:\n%4$s\n\nIt expires on %5$s."
+msgstr ""
+
+#: includes/permissions/class-policy.php:87
+msgid "Read only"
+msgstr ""
+
+#: includes/permissions/class-policy.php:88
+msgid "Prior approval"
+msgstr ""
+
+#: includes/permissions/class-policy.php:89
+msgid "Automatic"
+msgstr ""
+
+#: includes/permissions/class-policy.php:90
+msgid "Full access"
+msgstr ""
+
+#: includes/permissions/class-policy.php:97
+msgid "Your AI can look at everything it is allowed to see, but it cannot change anything."
+msgstr ""
+
+#: includes/permissions/class-policy.php:98
+msgid "Your AI reads freely. Every change waits for you to approve it in wp-admin."
+msgstr ""
+
+#: includes/permissions/class-policy.php:99
+msgid "Your AI makes changes on its own. Only critical actions (running PHP, editing wp-config.php, SQL writes, creating administrators, core updates) wait for you."
+msgstr ""
+
+#: includes/permissions/class-policy.php:100
+msgid "Your AI does everything without asking. Like a developer with the keys. Every action is still logged."
+msgstr ""
+
+#: includes/permissions/class-policy.php:107
+msgid "Read"
+msgstr ""
+
+#: includes/permissions/class-policy.php:108
+msgid "Write"
+msgstr ""
+
+#: includes/permissions/class-policy.php:109
+msgid "Destructive"
+msgstr ""
+
+#: includes/permissions/class-policy.php:110
+msgid "Critical"
+msgstr ""
+

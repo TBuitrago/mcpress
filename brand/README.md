@@ -1,6 +1,6 @@
 # MCPress · Marca
 
-**MCPress** (by TBA Digitals · mcpress.tbadigitals.com) conecta tu IA con WordPress por MCP. La marca cuenta una sola idea: **tu IA propone, tú presionas aprobar.** El símbolo es una tecla con la "m"; presionarla es aprobar.
+**MCPress** (by TBA Digitals · mcpress.tbadigitals.com) conecta tu IA con WordPress por MCP. La marca cuenta una sola idea: **tu IA maneja WordPress, tú pones las reglas.** El símbolo es una tecla con la "m"; presionarla es decidir: aprobar un cambio o soltar el control en modo automático.
 
 > Guía completa (tokens, voz, componentes y logo animado en vivo): sistema de diseño **MCPress** en Claude — https://claude.ai/artifact/CS5yfATi9jWdtJ6P7FAD2d
 

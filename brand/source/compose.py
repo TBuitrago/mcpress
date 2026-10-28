@@ -86,7 +86,7 @@ def banner(w, h, lang='en'):
     hero_w = ksz; hero_h = ksz * ((B.KH + B.KD + 60 + 420) / (B.KW + 60 + 420))
     cx = kx + key / 2; cy = ky + key / 2 + 4 * s
     em = f'<span style="color:{C["glow"]}">'
-    head = (f'Your AI proposes.<br>You {em}press</span> approve.' if lang == 'en' else f'Tu IA propone.<br>Tú {em}apruebas</span>.')
+    head = (f'Your AI runs WordPress.<br>You set the {em}rules</span>.' if lang == 'en' else f'Tu IA maneja WordPress.<br>Tú pones las {em}reglas</span>.')
     eyebrow = 'MCP FOR WORDPRESS' if lang == 'en' else 'MCP PARA WORDPRESS'
     body = f'''
 <div style="position:absolute;inset:0;background:{C['ink']}"></div>
@@ -106,9 +106,9 @@ def og(w=1200, h=630):
 <div style="position:absolute;inset:0;background:{C['paper']}"></div>
 <div style="position:absolute;right:-70px;top:50%;transform:translateY(-50%)">{hero}</div>
 <div style="position:absolute;left:72px;top:64px">{lk}</div>
-<div style="position:absolute;left:80px;top:232px;width:640px;color:{C['ink']}">
-  <div style="font:800 76px/1.02 Poppins;letter-spacing:-.03em">Tu IA propone.<br>Tú <span style="color:{C['signal']}">apruebas</span>.</div>
-  <div style="font:400 25px/1.45 Poppins;color:{C['muted']};margin-top:26px;max-width:560px">Conecta Claude, ChatGPT o Cursor a tu WordPress por MCP. Los cambios delicados esperan tu clic.</div>
+<div style="position:absolute;left:80px;top:212px;width:660px;color:{C['ink']}">
+  <div style="font:800 64px/1.04 Poppins;letter-spacing:-.03em">Tu IA maneja WordPress.<br>Tú pones las <span style="color:{C['signal']}">reglas</span>.</div>
+  <div style="font:400 25px/1.45 Poppins;color:{C['muted']};margin-top:26px;max-width:560px">Conecta Claude, ChatGPT o Cursor por MCP. Con tu aprobación o en automático.</div>
 </div>
 <div style="position:absolute;left:80px;bottom:56px;font:500 21px Plex;letter-spacing:.08em;color:{C['ink']}">{sq(14)}mcpress.tbadigitals.com</div>'''
 

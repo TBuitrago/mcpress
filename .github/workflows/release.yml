@@ -1,0 +1,60 @@
+# Builds mcpress.zip from the mcpress/ folder and attaches it to the GitHub release.
+# Every WordPress site with MCPress installed picks the new version up automatically.
+#
+# How to release:
+#   1. Bump "Version:" in mcpress/mcpress.php, MCPRESS_VERSION and "Stable tag:" in mcpress/readme.txt.
+#   2. Commit, then create a release on GitHub with a tag like v0.2.0 (the release notes become
+#      the changelog shown in wp-admin; add a line "Tested up to: 7.1" if you want).
+#   3. This workflow attaches mcpress.zip. Sites update within a few hours (or "Check GitHub now").
+name: Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag to (re)build the zip for
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG }}
+
+      - name: Check that the tag matches the plugin version
+        run: |
+          TAG="${RELEASE_TAG#v}"
+          HEADER=$(grep -E '^\s*\*\s*Version:' mcpress/mcpress.php | head -1 | awk '{print $NF}')
+          CONST=$(grep -oE "MCPRESS_VERSION', '[^']+" mcpress/mcpress.php | sed "s/.*'//")
+          echo "tag=$TAG header=$HEADER const=$CONST"
+          test "$TAG" = "$HEADER" && test "$TAG" = "$CONST"
+
+      - name: Lint PHP (7.4 and 8.3)
+        run: |
+          for v in 7.4 8.3; do
+            docker run --rm -v "$PWD/mcpress:/app" php:$v-cli sh -c 'find /app -name "*.php" -print0 | xargs -0 -n1 php -l > /dev/null'
+          done
+
+      - name: Unit tests
+        run: docker run --rm -v "$PWD/mcpress:/app" -w /app php:8.3-cli php tests/unit.php
+
+      - name: Build mcpress.zip
+        run: |
+          mkdir -p dist
+          rsync -a --exclude tests --exclude bin --exclude '.distignore' --exclude '.DS_Store' mcpress/ dist/mcpress/
+          cd dist && zip -qr mcpress.zip mcpress && sha256sum mcpress.zip
+
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$RELEASE_TAG" dist/mcpress.zip --clobber
