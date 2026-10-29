@@ -4,7 +4,7 @@ Tags: mcp, ai, claude, chatgpt, automation
 Requires at least: 6.3
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,9 @@ The MCP endpoint disappears and every key stops working at once. Uninstalling de
 MCPress → Diagnostics tells you. Add `SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1` to .htaccess, or send the key in the `X-MCPress-Key` header.
 
 == Changelog ==
+
+= 0.1.1 =
+* The plugin's author is now Tomas Buitrago, and its website, documentation and server links point to the GitHub repository.
 
 = 0.1.0 =
 * First release: native MCP server (Streamable HTTP), four permission modes, approval queue, activity log, OAuth 2.1, ~95 tools, GitHub updates.

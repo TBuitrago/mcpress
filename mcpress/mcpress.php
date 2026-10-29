@@ -3,7 +3,7 @@
  * Plugin Name:       MCPress
  * Plugin URI:        https://github.com/TBuitrago/mcpress
  * Description:       Connect your AI to WordPress over MCP. Your AI runs WordPress; you set the rules: prior approval or fully automatic.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Requires at least: 6.3
  * Requires PHP:      7.4
  * Author:            Tomas Buitrago
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'MCPRESS_VERSION', '0.1.0' );
+define( 'MCPRESS_VERSION', '0.1.1' );
 define( 'MCPRESS_DB_VERSION', 1 );
 define( 'MCPRESS_FILE', __FILE__ );
 define( 'MCPRESS_DIR', plugin_dir_path( __FILE__ ) );
