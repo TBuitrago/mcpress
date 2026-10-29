@@ -1,55 +1,61 @@
 # MCPress
 
+**English** · [Español](README.es.md)
+
 ![MCPress](brand/logo/animated/mcpress-logo-loop-light.svg)
 
-**Tu IA maneja WordPress. Tú pones las reglas.**
+**Your AI runs WordPress. You set the rules.**
 
-Conecta tu IA con WordPress por MCP. Tú decides cuánto control le das: con tu aprobación previa o en automático.
-Un producto de [TBA Digitals](https://tbadigitals.com) · [mcpress.tbadigitals.com](https://mcpress.tbadigitals.com)
+Connect your AI to WordPress over MCP. You decide how much control it gets: prior approval or fully automatic.
+A product by [TBA Digitals](https://tbadigitals.com) · [mcpress.tbadigitals.com](https://mcpress.tbadigitals.com)
 
-## Qué es
+## What it is
 
-MCPress convierte tu sitio WordPress en un servidor MCP (Model Context Protocol). Claude, ChatGPT, Cursor, VS Code o cualquier cliente MCP pueden manejar el sitio completo: contenido, medios, usuarios, plugins, temas, menús, archivos, base de datos, ajustes y cualquier plugin con API REST (WooCommerce, ACF, SEO…).
+MCPress turns your WordPress site into an MCP (Model Context Protocol) server. Claude, ChatGPT, Cursor, VS Code or any MCP client can run the whole site: content, media, users, plugins, themes, menus, files, database, settings and any plugin with a REST API (WooCommerce, ACF, SEO…).
 
-El servidor MCP corre **dentro de tu WordPress**. No hay un servicio intermedio: las claves, las aprobaciones y el registro de actividad se quedan en tu sitio.
+The MCP server runs **inside your WordPress**. There is no relay service in between: keys, approvals and the activity log stay on your site.
 
-## Modos de permiso
+## Permission modes
 
-Cada IA conectada tiene su propio modo:
+Every connected AI has its own mode:
 
-| Modo | Lectura | Escritura | Destructivo | Crítico |
+| Mode | Read | Write | Destructive | Critical |
 |---|---|---|---|---|
-| **Solo lectura** | se ejecuta | bloqueada | bloqueada | bloqueada |
-| **Aprobación previa** | se ejecuta | te pregunta | te pregunta | te pregunta |
-| **Automático** | se ejecuta | se ejecuta | se ejecuta | te pregunta |
-| **Acceso total** | se ejecuta | se ejecuta | se ejecuta | se ejecuta |
+| **Read only** | runs | refused | refused | refused |
+| **Prior approval** | runs | asks you | asks you | asks you |
+| **Automatic** | runs | runs | runs | asks you |
+| **Full access** | runs | runs | runs | runs |
 
-- *Crítico* es lo irreversible o sensible: ejecutar PHP, SQL de escritura, editar `wp-config.php`, crear administradores, borrar para siempre, actualizar el núcleo…
-- Cuando algo espera tu aprobación, aparece en **wp-admin → MCPress → Aprobaciones** (y en la barra de administración). Al aprobar, se ejecuta exactamente lo que la IA pidió y ella recibe el resultado.
-- Puedes fijar reglas por herramienta (siempre ejecutar, siempre preguntar, nunca) o apagar áreas completas.
-- En todos los modos: la IA no puede tocar los ajustes ni las claves de MCPress, no puede dejarte sin acceso y todo queda registrado.
+- *Critical* means irreversible or sensitive: running PHP, SQL writes, editing `wp-config.php`, creating administrators, permanent deletions, core updates…
+- When something is waiting for your approval, it shows up in **wp-admin → MCPress → Approvals** (and in the admin bar). When you approve, exactly what the AI asked for runs and the AI gets the result.
+- You can set per-tool rules (always run, always ask, never) or switch whole areas off.
+- In every mode: the AI cannot touch MCPress' settings or keys, cannot lock you out, and everything is logged.
 
-## Conectar
+## Connect
 
-- **Claude (claude.ai, Desktop) y ChatGPT:** agrega un conector personalizado con la URL MCP de tu sitio (`https://tusitio.com/wp-json/mcpress/v1/mcp`). Inicias sesión en WordPress, eliges el modo y apruebas (OAuth 2.1).
-- **Claude Code, Cursor, VS Code, Windsurf, Gemini CLI…:** crea una clave en **MCPress → Conectar** y copia el fragmento listo para tu cliente.
+- **Claude (claude.ai, Desktop) and ChatGPT:** add a custom connector with your site's MCP URL (`https://yoursite.com/wp-json/mcpress/v1/mcp`). You log in to WordPress, choose the mode and approve (OAuth 2.1).
+- **Claude Code, Cursor, VS Code, Windsurf, Gemini CLI…:** create a key in **MCPress → Connect** and copy the ready-made snippet for your client.
 
-## Estructura del repositorio
+## Languages
 
-| Carpeta | Contenido |
+The plugin is written in English and ships a complete Spanish translation. WordPress picks the language from the site or user setting (**Settings → General → Site Language**, or **Profile → Language**): every Spanish locale (`es_CO`, `es_ES`, `es_MX`…) gets Spanish, everything else gets English.
+
+## Repository layout
+
+| Folder | Contents |
 |---|---|
-| `mcpress/` | El plugin (es lo que se instala). |
-| `mcpress/tests/` | Pruebas unitarias (`php tests/unit.php`) y de punta a punta con Docker (`bash tests/env.sh up && bash tests/env.sh e2e`). No van en el zip. |
-| `mcpress/bin/i18n.php` | Genera `languages/mcpress.pot` y compila la traducción al español. No va en el zip. |
-| `brand/` | Marca: logos, animaciones, banners, tokens y su generador. |
-| `.github/workflows/release.yml` | Arma `mcpress.zip` y lo adjunta a cada release de GitHub. |
+| `mcpress/` | The plugin (this is what gets installed). |
+| `mcpress/tests/` | Unit tests (`php tests/unit.php`) and end-to-end tests with Docker (`bash tests/env.sh up && bash tests/env.sh e2e`). Not included in the zip. |
+| `mcpress/bin/i18n.php` | Generates `languages/mcpress.pot` and compiles the Spanish translation. Not included in the zip. |
+| `brand/` | Brand: logos, animations, banners, tokens and the generator behind them. |
+| `.github/workflows/release.yml` | Builds `mcpress.zip` and attaches it to every GitHub release. |
 
-## Publicar una versión
+## Releasing a version
 
-1. Sube la versión en `mcpress/mcpress.php` (cabecera `Version:` y `MCPRESS_VERSION`) y en `Stable tag:` de `mcpress/readme.txt`.
-2. Haz commit y crea un release en GitHub con el tag `vX.Y.Z`. Las notas del release son el registro de cambios que se ve en wp-admin.
-3. El workflow adjunta `mcpress.zip`. Cada sitio con MCPress se actualiza solo en unas horas (o al pulsar **Revisar GitHub ahora** en Ajustes).
+1. Bump the version in `mcpress/mcpress.php` (the `Version:` header and `MCPRESS_VERSION`) and in `Stable tag:` in `mcpress/readme.txt`.
+2. Commit and create a GitHub release with the tag `vX.Y.Z`. The release notes are the changelog shown in wp-admin.
+3. The workflow attaches `mcpress.zip`. Every site running MCPress updates itself within a few hours (or right away with **Check GitHub now** in Settings).
 
-Para que los sitios puedan leer los releases, el repositorio debe ser público; si es privado, cada sitio necesita `define( 'MCPRESS_GITHUB_TOKEN', '…' );` en `wp-config.php`.
+For sites to read the releases, the repository must be public; if it is private, each site needs `define( 'MCPRESS_GITHUB_TOKEN', '…' );` in `wp-config.php`.
 
-Licencia: GPL-2.0-or-later
+License: GPL-2.0-or-later
