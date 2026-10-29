@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name:       MCPress
- * Plugin URI:        https://mcpress.tbadigitals.com
+ * Plugin URI:        https://github.com/TBuitrago/mcpress
  * Description:       Connect your AI to WordPress over MCP. Your AI runs WordPress; you set the rules: prior approval or fully automatic.
  * Version:           0.1.0
  * Requires at least: 6.3
  * Requires PHP:      7.4
- * Author:            TBA Digitals
- * Author URI:        https://tbadigitals.com
+ * Author:            Tomas Buitrago
+ * Author URI:        https://github.com/TBuitrago/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       mcpress

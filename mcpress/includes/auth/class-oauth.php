@@ -57,7 +57,7 @@ class OAuth {
 			'bearer_methods_supported' => array( 'header' ),
 			'scopes_supported'         => array( 'mcp' ),
 			'resource_name'            => 'MCPress · ' . wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES ),
-			'resource_documentation'   => 'https://mcpress.tbadigitals.com',
+			'resource_documentation'   => 'https://github.com/TBuitrago/mcpress',
 		);
 	}
 
@@ -77,7 +77,7 @@ class OAuth {
 			'scopes_supported'                      => array( 'mcp' ),
 			'client_id_metadata_document_supported' => true,
 			'authorization_response_iss_parameter_supported' => true,
-			'service_documentation'                 => 'https://mcpress.tbadigitals.com',
+			'service_documentation'                 => 'https://github.com/TBuitrago/mcpress',
 		);
 	}
 

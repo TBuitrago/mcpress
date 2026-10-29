@@ -130,7 +130,7 @@ class Server {
 				'name'        => 'mcpress',
 				'title'       => 'MCPress · ' . wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES ),
 				'version'     => MCPRESS_VERSION,
-				'websiteUrl'  => 'https://mcpress.tbadigitals.com',
+				'websiteUrl'  => 'https://github.com/TBuitrago/mcpress',
 				'description' => 'Full control of a WordPress site over MCP, with the permission mode chosen by the site owner.',
 				'icons'       => array(
 					array(
